@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* scrollbar */
+
+ ::-webkit-scrollbar {
+    width: .5rem;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #d7dbd6;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #bec0bd;
+}
+
+.scrolling-box {
+    scroll-behavior: smooth;
+}
+
+.section {
+    min-height: 100vh;
+    display: block;
+}
+
+.content {
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* colors */
+
+.color-one {
+    color: #c84848;
+}
+
+.color-two {
+    color: #c84848
+}
+
+.color-three {
+    color: #976662
+}
+
+.color-white {
+    color: #fff;
+}
+
+.background-two {
+    background: #f3eeee;
+}
+
+.background-one {
+    background-color: #8ea199;
+}
+
+
+/* fonts */
+
+.font-one {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.font-two {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* Titles */
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin: 3rem;
+    color: #4f4949;
+}
+
+h2,
+{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.sub-title {
+    font-size: 2.5rem;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-top: 1rem;
+}
+
+
+/* sections */
+
+
+/* Home */
+
+.home {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+}
+
+#portafolio {}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    background-image: url("../assets/img/pexels-photo-684314.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.home:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: transparent linear-gradient(to right bottom, #b62323, #795548); */
+    z-index: -1;
+    opacity: .6;
+}
+
+#typedtext {
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2rem;
+}
+
+.top-20 {
+    top: 10%
+}
+
+
+/* About */
+
+.profile-photo {
+    text-align: right;
+}
+
+.profile-photo img {
+    border: 0.7rem solid #efe6e6;
+    padding: 0.9rem;
+    box-sizing: content-box;
+    border-radius: 50%;
+    background-color: #dbcdcd;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 3rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+#about {
+    color: #745d5b;
+}
+
+.skills {
+    background-color: #8ea199;
+    text-align: center
+}
+
+.icons i {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 2;
+    margin: 3rem;
+}
+
+
+/* Contact */
+
+.contact {
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 3rem;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../assets/img/Flat-Mountains.svg);
+    background-size: cover;
+    color: #976662;
+}
+
+.contact i {
+    font-size: 2.5 rem;
+    color: #976662;
+    line-height: 2;
+    margin-right: 1rem;
+}
+
+
+/* others */
+
+.arrow {
+    width: 0;
+    height: 0;
+    right: 47%;
+    position: absolute;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 20px solid #f8f8f8;
+}
+
+.separator {
+    font-size: 4vw;
+}
+
+.carousel-control-prev-icon {
+    background: none;
+}
+
+.arrows {
+    color: #333;
+    font-size: 5rem;
+}
+
+.arrows:hover {
+    color: #c84848;
+}
+
+@-webkit-keyframes jump {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    20% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+    80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.jump {
+    -webkit-animation: jump 2s ease 0s infinite normal;
+    animation: jump 2s ease 0s infinite normal;
+    font-size: 2.5rem;
+    color: #fff;
+    position: absolute;
+    right: 5vw;
+    bottom: 6vw
+}
+
+.section-two-p {
+    /* background-color: #f8f8f8; */
+}
+
+.card {
+    border: 0;
+    border-radius: 0;
+}
+
+.title-line {
+    overflow: hidden;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.title-line:after {
+    background-color: #d6cece;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.title-line:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.title-line-right {
+    overflow: hidden;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+.title-line-right:before {
+    background-color: #d6cece;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.title-line-right:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+@media (max-width: 800px) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    .description {
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3
+    }
+}
