@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background-color: #fff;
 }
 
@@ -81,10 +81,8 @@ html {
 h1 {
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-    margin: 3rem;
-    color: #4f4949;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 h2,
@@ -103,8 +101,9 @@ h4 {
 }
 
 .sub-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
     padding-top: 1rem;
 }
 
@@ -125,11 +124,20 @@ canvas {
     vertical-align: bottom;
 }
 
+.front-end {
+    color: #c84848;
+    background: #fffefe63;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
 .home {
     width: 100%;
     height: 100vh;
     background-color: #ffffff;
-    background-image: url("../assets/img/pexels-photo-684314.jpeg");
+    /* background-image: linear-gradient(to left bottom, #cb2d3e, #d4333e, #dd3a3f, #e6403e, #ef473e); */
+    background-image: url("../assets/img/computer-device-electronics.jpg");
+    /* background-image: linear-gradient(to right top, #4ecdc4, #49b1bb, #5096a8, #567b8f, #556270); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -139,17 +147,18 @@ canvas {
     z-index: 0;
 }
 
-.home:after {
+
+/* .home:after {
     content: " ";
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    /* background: transparent linear-gradient(to right bottom, #b62323, #795548); */
+    background: #ebaaaa00 linear-gradient(to right bottom, #c84848, #eb7142);
     z-index: -1;
     opacity: .6;
-}
+} */
 
 #typedtext {
     top: 30%;
@@ -160,7 +169,7 @@ canvas {
 }
 
 .top-20 {
-    top: 10%
+    top: 30%
 }
 
 
@@ -191,15 +200,15 @@ canvas {
 }
 
 .skills {
-    background-color: #8ea199;
-    text-align: center
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 2rem;
 }
 
-.icons i {
+.skills i {
     font-size: 3rem;
-    color: #fff;
     line-height: 2;
-    margin: 3rem;
+    margin: 2.5rem;
 }
 
 
@@ -207,20 +216,17 @@ canvas {
 
 .contact {
     font-size: 1.5rem;
-    font-family: 'Quicksand', sans-serif;
     line-height: 3rem;
     text-align: center;
-    background-attachment: fixed;
-    background-image: url(../assets/img/Flat-Mountains.svg);
-    background-size: cover;
-    color: #976662;
+    background-color: #c84847;
+    color: #fff;
 }
 
 .contact i {
-    font-size: 2.5 rem;
-    color: #976662;
+    font-size: 3rem;
+    color: #fff;
     line-height: 2;
-    margin-right: 1rem;
+    margin: 1rem;
 }
 
 
@@ -233,7 +239,7 @@ canvas {
     position: absolute;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
-    border-top: 20px solid #f8f8f8;
+    border-top: 30px solid #f4f4f4;
 }
 
 .separator {

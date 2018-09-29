@@ -1,14 +1,15 @@
 particlesJS("particles-js", {
+
     "particles": {
         "number": {
-            "value": 25,
+            "value": 30,
             "density": {
-                "enable": false,
+                "enable": true,
                 "value_area": 800
             }
         },
         "color": {
-            "value": "#d4b18b"
+            "value": "#c84848"
         },
         "shape": {
             "type": "circle",
@@ -26,8 +27,8 @@ particlesJS("particles-js", {
             }
         },
         "opacity": {
-            "value": 0.08,
-            "random": true,
+            "value": 0.5,
+            "random": false,
             "anim": {
                 "enable": false,
                 "speed": 1,
@@ -36,7 +37,7 @@ particlesJS("particles-js", {
             }
         },
         "size": {
-            "value": 72.15354273894853,
+            "value": 3,
             "random": true,
             "anim": {
                 "enable": false,
@@ -46,16 +47,16 @@ particlesJS("particles-js", {
             }
         },
         "line_linked": {
-            "enable": false,
-            "distance": 500,
-            "color": "#ffffff",
+            "enable": true,
+            "distance": 150,
+            "color": "#fff",
             "opacity": 0.4,
-            "width": 2
+            "width": 1
         },
         "move": {
             "enable": true,
             "speed": 2,
-            "direction": "top-right",
+            "direction": "none",
             "random": false,
             "straight": false,
             "out_mode": "out",
@@ -71,11 +72,11 @@ particlesJS("particles-js", {
         "detect_on": "canvas",
         "events": {
             "onhover": {
-                "enable": true,
-                "mode": "grab"
+                "enable": false,
+                "mode": "repulse"
             },
             "onclick": {
-                "enable": true,
+                "enable": false,
                 "mode": "push"
             },
             "resize": true
@@ -84,14 +85,14 @@ particlesJS("particles-js", {
             "grab": {
                 "distance": 400,
                 "line_linked": {
-                    "opacity": 0.5
+                    "opacity": 1
                 }
             },
             "bubble": {
                 "distance": 400,
-                "size": 4,
-                "duration": 0.3,
-                "opacity": 1,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
                 "speed": 3
             },
             "repulse": {

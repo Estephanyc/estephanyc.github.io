@@ -1,12 +1,12 @@
 .menu {
     line-height: 1;
-    margin: 8rem auto 3em;
+    margin: 3rem auto 3em;
 }
 
 .menu__list {
     position: relative;
     list-style: none;
-    text-align: center;
+    text-align: right;
 }
 
 .menu__item {
@@ -14,11 +14,11 @@
 }
 
 .menu__link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Julius Sans One', sans-serif;
     padding: 0.8em;
     cursor: pointer;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-weight: bold;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -42,7 +42,7 @@
 .menu--iris .menu__link {
     position: relative;
     text-align: center;
-    color: #191818;
+    color: #c84848;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }

@@ -3,11 +3,17 @@
     font-family: 'Quicksand', sans-serif;
     margin: auto;
     overflow: hidden;
+    padding: 0px;
 }
 
 .content i {
     color: #fff;
     font-size: 2rem;
+    margin: 1rem;
+}
+
+.content-title {
+    margin-top: 1rem;
 }
 
 .content .content-overlay {
