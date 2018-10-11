@@ -1,5 +1,6 @@
 .content {
     position: relative;
+    color: #fff;
 }
 
 .overlay {
@@ -8,6 +9,9 @@
     bottom: 0;
     left: 0;
     right: 0;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 3rem;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -17,4 +21,10 @@
 
 .content:hover .overlay {
     opacity: 1;
+}
+
+.content i {
+    color: #fff;
+    font-size: 2rem;
+    padding: .5rem;
 }
