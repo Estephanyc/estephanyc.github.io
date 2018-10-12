@@ -8,48 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="user.css">
-    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|KoHo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" media="screen" href="./src/css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/menu.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/scroll.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/projects.css">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/time-line.css">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
-
     <section id="particles-js" class="section home">
-        <div class="container-fluid position-absolute ">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top col mx-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  ml-auto pr-4">
 
-            <div id="Iris">
-
-                <nav class="menu menu--iris">
-                    <div class="menu__list">
-
-                        <span class="menu__item menu__item">
-                        <a href="#about" class="menu__link">Sobre mi</a>
-                    </span>
-
-                        <span class="menu__item--current">
-                        <a href="#portafolio" class="menu__link">Portafolio</a>
-                    </span>
-                        <span class="menu__item">
-                        <a href="#contact" class="menu__link">Contacto</a>
-                    </span>
-                    </div>
-                </nav>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
         <div class="container-fluid position-absolute top-20">
-            <div class="row pt-4">
+            <div class="row">
                 <div class="col-12 col-md-10 mx-auto">
                     <h1>Estephany Carvajal</h1>
                     <span class="front-end">
@@ -63,11 +50,9 @@
         <a href="#about"><i class="fas fa-angle-down jump"></i></a>
     </section>
 
-
     <section id="portafolio" class="col-md-10 col-12 mx-auto mt-5">
-
         <div class="row">
-            <p class="font-one sub-title pl-3">
+            <p class="sub-title">
                 Proyectos
             </p>
             <div class="row project">
@@ -83,13 +68,13 @@
                         <i class="devicon-bootstrap-plain "></i>
                         <i class="devicon-css3-plain "></i>
                     </div>
-                    <button type="button" class="btn btn-outline-info mt-3">Ver projecto</button>
+                    <button type="button" class="btn btn-outline-danger mt-3">Ver projecto</button>
                 </div>
             </div>
             <div class="row project">
                 <div class="col-4">
                     <div class="content">
-                        <img src="./src/assets/img/projects/compra-justo.png" class="img-fluid" alt="">
+                        <img src="./src/assets/img/projects/compra-justo.jpg" class="img-fluid" alt="">
                         <div class="overlay">
                             <div>
                                 <i class="devicon-javascript-plain "></i>
@@ -101,10 +86,12 @@
                         </div>
                     </div>
                     <h3 class="content-title">Compra justo</h3>
+                    <p>Sitio que conecta vendedores y compradores bajo el concepto de comercio justo, permite agregar comercios, verlos en mapa y en lista, también marcar rutas entre dos puntos.
+                    </p>
                 </div>
                 <div class="col-4">
                     <div class="content">
-                        <img src="./src/assets/img/projects/compra-justo.png" class="img-fluid" alt="">
+                        <img src="./src/assets/img/projects/mark-down.jpg" class="img-fluid" alt="">
                         <div class="overlay">
                             <div>
                                 <i class="devicon-javascript-plain "></i>
@@ -116,10 +103,12 @@
                         </div>
                     </div>
                     <h3 class="content-title">Markdown</h3>
+                    <p>Markdown link es un modulo que te permite ver los enlaces que hay en un archivo md, validarlos y obtener estadisticas.
+                    </p>
                 </div>
                 <div class="col-4">
                     <div class="content">
-                        <img src="./src/assets/img/projects/compra-justo.png" class="img-fluid" alt="">
+                        <img src="./src/assets/img/projects/mark-down.jpg" class="img-fluid" alt="">
                         <div class="overlay">
                             <div>
                                 <i class="devicon-javascript-plain "></i>
@@ -194,64 +183,49 @@
             </div>
         </div>
     </section>
-
-    <section id="about ">
-
-        <div class="row pt-5">
-            <div class="text-center col-md-4 pl-0 pr-0 aos-init aos-animate ">
-
+    <section id="about" class="section">
+        <div class="row full-width">
+            <div class="col-md-4  pl-0 pr-0 text-center ">
                 <img src=" ./src/assets/img/user.JPG" class="img-fluid">
             </div>
-            <div class="col-md-8 background-three pl-5 pt-5 description">
-                <p class="color-two font-one sub-title ">
+            <div class="col-md-8 background-one pl-5 pt-5 description">
+                <p class="color-one font-one sub-title ">
                     <span>
-        <strong>Sobre Mi</strong>
-    </span>
+                        <strong>Sobre Mi</strong>
+                    </span>
                     <span class="separator ">|</span>
                     <span class=" ">Estephany C.</span>
                 </p>
-                <p class="description " data-aos="fade-left" data-aos-duration="2000">
+                <p class="description">
                     Me apasiona la tecnología y poder construir soluciones por medio de esta soy responsable, organizada, con facilidad y disposición para aprender nuevas herramientas y trabajar en equipo.
                 </p>
                 <button type="button " class="btn btn-outline-danger ">Curriculum</button>
 
             </div>
         </div>
-        <div class="row ">
-            <div class="skills col mx-auto text-white">
-                <div class="icons aos-init aos-animate ">
-                    <p class="sub-title ">Habilidades</p>
-                    <i class="devicon-javascript-plain "></i>
-                    <i class="devicon-html5-plain-wordmark "></i>
-                    <i class="devicon-css3-plain-wordmark "></i>
-                    <i class="devicon-bootstrap-plain-wordmark "></i>
-                    <i class="devicon-angularjs-plain "></i>
-                    <i class="devicon-wordpress-plain-wordmark "></i>
-                    <i class="devicon-github-plain-wordmark "></i>
-                </div>
+        <div class="skills col mx-auto text-white">
+            <div class="icons">
+                <p class="sub-title ">Habilidades</p>
+                <i class="devicon-javascript-plain "></i>
+                <i class="devicon-html5-plain-wordmark "></i>
+                <i class="devicon-css3-plain-wordmark "></i>
+                <i class="devicon-bootstrap-plain-wordmark "></i>
+                <i class="devicon-angularjs-plain "></i>
+                <i class="devicon-wordpress-plain-wordmark "></i>
+                <i class="devicon-github-plain-wordmark "></i>
             </div>
         </div>
-
-        </div>
-        <!-- <div class="skills-container ">
-            <svg version="1.1 " id="Layer_1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " viewBox="0 0 1400 80 " enable-background="new 0 0 1400 150 " xml:space="preserve ">
-                <polygon fill="#8ea199 " points="0,0 687.429,40 1400,0 1400,80 0,80 "></polygon>
-            </svg>
-            <div class="skills ">
-                
-            </div>
-            <svg class="background-one " version="1.1 " id="Layer_1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " viewBox="0 0 1400 80 " enable-background="new 0 0 1400 150 " xml:space="preserve ">
-                <polygon fill="#fff " points="0,0 687.429,40 1400,0 1400,80 0,80 "></polygon>
-            </svg>
-        </div> -->
     </section>
-    <section id="contact " class="contact font-two background-two pb-1 ">
-        <div class="arrow "></div>
+    <section id="contact" class="contact">
         <div data-aos="flip-left" data-aos-duration="2000" class="col-12 col-md-7 mx-auto pt-5 aos-init ">
-            <p class="sub-title"><strong>Contacto</strong></p>
+            <p class="sub-title">
+                <strong>Contacto</strong>
+            </p>
             <div class="p-4 ">
                 <p>
-                    <i class="fab fa-linkedin "></i> <i class="fab fa-github "></i><i class="far fa-envelope-open "></i>
+                    <i class="fab fa-linkedin "></i>
+                    <i class="fab fa-github "></i>
+                    <i class="far fa-envelope-open "></i>
 
                 </p>
                 <p>
@@ -263,20 +237,26 @@
         </div>
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js "></script>
     <script src="./src/js/particles.js "></script>
-    <script src="./src/js/typewrite.js "></script>
-    <script src="./src/js/menu/classie.js "></script>
-    <script src="./src/js/menu/clipboard.min.js "></script>
-    <script src="./src/js/menu/menu.js "></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
     <script src="./src/js/time-line/jquery.mobile.custom.min.js "></script>
     <script src="./src/js/time-line/main.js "></script>
-    <script src="./src/js/time-line/modernizr.js "></script>
-
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() { // check if scroll event happened
+                if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+                    $(".fixed-top").css("background-color", "#f8f8f8f0"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                } else {
+                    $(".fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+                }
+            });
+        });
+    </script>
 
 
     <script>
