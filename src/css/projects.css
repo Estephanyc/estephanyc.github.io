@@ -1,12 +1,19 @@
 .project i {
-    color: #c84848;
+    color: #45918a;
     font-size: 1.5rem;
     padding: 1rem;
 }
 
+.project {}
+
 .content {
     position: relative;
     color: #fff;
+    margin-top: 3rem;
+}
+
+.content img {
+    border: .5rem solid #efecec;
 }
 
 .overlay {

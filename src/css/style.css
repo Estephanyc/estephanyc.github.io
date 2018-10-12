@@ -33,11 +33,6 @@ html {
     display: block;
 }
 
-. {
-    height: 100%;
-    overflow: auto;
-}
-
 
 /* colors */
 
@@ -108,7 +103,8 @@ h4 {
 .sub-title {
     font-size: 2rem;
     font-family: 'Julius Sans One', sans-serif;
-    padding-top: 1rem;
+    padding: 1rem;
+    font-weight: bold;
 }
 
 
@@ -222,13 +218,12 @@ canvas {
     font-size: 1.5rem;
     line-height: 3rem;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #c84847;
 }
 
 .contact i {
     font-size: 3rem;
-    color: #fff;
     line-height: 2;
     margin: 1rem;
 }
