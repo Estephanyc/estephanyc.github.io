@@ -16,23 +16,29 @@
 
 <body>
     <section id="particles-js" class="section home">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top col mx-auto">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="col-md-10 col-12 mx-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav  ml-auto pr-4">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav  ml-auto pr-4">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portafolio">Portafolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portafolio">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+
+                    </ul>
+                    <a href="https://www.linkedin.com/in/estephanyc/" target="_blank" title="Linkedin"> <i class="fab fa-linkedin "></i>
+                    </a>
+                    <a href="https://github.com/Estephanyc/" target="_blank" title="Github"><i class="fab fa-github "></i></a>
+                </div>
             </div>
         </nav>
         <div class="container-fluid position-absolute top-20">
@@ -43,11 +49,11 @@
                         Front-end Developer
                     </span>
                 </div>
-
             </div>
         </div>
-        </div>
-        <a href="#portafolio"><i class="fas fa-angle-down jump"></i></a>
+        <svg version="1.1 " id="Layer_1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " viewBox="0 0 1400 80 " enable-background="new 0 0 1400 150 " xml:space="preserve ">
+    <polygon fill="#ffffff" points="0,0 687.429,70 1400,0 1400,80 0,80 "></polygon>
+</svg>
     </section>
 
     <section id="portafolio" class="col-md-10 col-12 mx-auto mt-5" data-aos="fade-up" data-aos-duration="2000">
@@ -168,8 +174,8 @@
                             <i class="devicon-css3-plain "></i>
                         </div>
                         <div class="mt-4 ">
-                            <a class="btn btn-light border m-1" href="https://github.com/Estephanyc/pinterest-" target="_blank">Demo</a>
-                            <a class="btn btn-light border m-1" href="https://estephanyc.github.io/pinterest-/" target="_blank">Code</a>
+                            <a class="btn btn-light border m-1" href="https://estephanyc.github.io/pinterest-/" target="_blank">Demo</a>
+                            <a class="btn btn-light border m-1" href="https://github.com/Estephanyc/pinterest-" target="_blank">Code</a>
                         </div>
                     </div>
                 </div>
@@ -177,33 +183,34 @@
                 <p>Replica de estilos de Pinterest con imágenes aleatorias.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="col text-right">
             <a class="btn btn-danger ml-auto" href="https://github.com/Estephanyc/" target="_blank"> Más proyectos?</a>
         </div>
     </section>
-    <section id="about" class="section">
-        <div class="row full-width">
-            <div class="col-md-4  pl-0 pr-0 text-center">
-                <img src=" ./src/assets/img/user.JPG" class="img-fluid">
-            </div>
-            <div class="col-md-8 background-one pl-5 pt-5 description">
-                <p class="color-one font-one sub-title " data-aos="fade-left" data-aos-duration="3000">
-                    <span>
+    <section id="about">
+        <div class="col-md-10 col-12 mx-auto">
+            <div class="row">
+                <div class="col-md-4  text-center" data-aos="zoom-in" data-aos-duration="2000">
+                    <img src=" ./src/assets/img/user.JPG" class="rounded-circle img-fluid user">
+                </div>
+                <div class="col-md-8 pl-5 mb-5 description" data-aos="fade-up" data-aos-duration="2000">
+                    <p class="color-one font-one sub-title">
+                        <span>
                         <strong>Sobre Mi</strong>
                     </span>
-                    <span class="separator ">|</span>
-                    <span class=" ">Estephany C.</span>
-                </p>
-                <p class="description" data-aos="fade-left" data-aos-duration="3000">
-                    Me apasiona la tecnología y poder construir soluciones por medio de esta soy responsable, organizada, con facilidad y disposición para aprender nuevas herramientas y trabajar en equipo.
-                </p>
-                <button type="button " class="btn btn-outline-danger " data-aos="flip-left">Curriculum</button>
-
+                        <span class="separator ">|</span>
+                        <span class=" ">Estephany C.</span>
+                    </p>
+                    <p class="description">
+                        Me apasiona la tecnología y poder construir soluciones por medio de esta. Tengo facilidad y disposición para aprender nuevas herramientas y también para trabajar en equipo.
+                    </p>
+                    <a class="btn btn-outline-danger " data-aos="flip-left" href="https://drive.google.com/file/d/1BZC4bRIfL1EAd8Gsmthjdmpn0F0ScnGd/view?usp=sharing" target="_blank">Curriculum</a>
+                </div>
             </div>
         </div>
-        <div class="skills col mx-auto text-white">
+        <div class="skills col mx-auto text-white mt-5">
             <div class="icons" data-aos="zoom-in" data-aos-duration="2000">
-                <p class="sub-title ">Habilidades</p>
+                <p class="sub-title ">Herramientas</p>
                 <i class="devicon-javascript-plain "></i>
                 <i class="devicon-html5-plain-wordmark "></i>
                 <i class="devicon-css3-plain-wordmark "></i>
@@ -214,8 +221,8 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="contact">
-        <div data-aos="flip-left" data-aos-duration="2000" class="col-12 col-md-7 mx-auto pt-5 aos-init ">
+    <section id="contact">
+        <div data-aos="flip-left" data-aos-duration="2000" class="col-12 col-md-7 mx-auto pt-4">
             <p class="sub-title">
                 <strong>Contacto</strong>
             </p>
@@ -233,7 +240,6 @@
         </div>
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>

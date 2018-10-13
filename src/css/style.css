@@ -69,6 +69,12 @@ nav li>a:hover:before {
     transform: scaleX(1);
 }
 
+nav i {
+    color: #c84847;
+    font-size: 1.5rem;
+    padding: .5rem 1.5rem;
+}
+
 
 /* sections */
 
@@ -104,21 +110,16 @@ nav li>a:hover:before {
     opacity: .6;
 }
 
+.home svg {
+    position: absolute;
+    bottom: 0
+}
+
 .front-end {
     color: #c84848;
     background: #d7d5d563;
     padding: 1rem;
     font-size: 2rem;
-}
-
-.jump {
-    -webkit-animation: jump 2s ease 0s infinite normal;
-    animation: jump 2s ease 0s infinite normal;
-    font-size: 3rem;
-    color: #c84848;
-    position: absolute;
-    right: 5vw;
-    bottom: 4vw
 }
 
 
@@ -155,8 +156,8 @@ nav li>a:hover:before {
 
 .skills {
     text-align: center;
-    background-color: #83a9a6;
-    padding: 2rem;
+    background-color: #45918a;
+    padding: 3rem;
 }
 
 .skills i {
@@ -226,13 +227,13 @@ nav li>a:hover:before {
     padding-bottom: 1rem;
 }
 
-.contact i {
+#contact i {
     font-size: 3rem;
     line-height: 2;
     margin: 1rem;
 }
 
-.contact a {
+#contact a {
     color: #c84847;
 }
 
@@ -244,7 +245,7 @@ nav li>a:hover:before {
 }
 
 .background-one {
-    background-color: #f7f8f8;
+    background-color: #f5f7fa;
 }
 
 
@@ -286,7 +287,6 @@ h4 {
 .sub-title {
     font-size: 2rem;
     font-family: 'Julius Sans One', sans-serif;
-    padding: 1rem;
     font-weight: bold;
 }
 
@@ -303,36 +303,33 @@ canvas {
 /* others */
 
 .separator {
-    font-size: 4vw;
+    font-size: 2.5rem;
 }
 
-@-webkit-keyframes jump {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+.arrow {
+    width: 0;
+    height: 0;
+    right: 47%;
+    top: 0;
+    position: absolute;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 30px solid #45918a;
+}
+
+@media (max-width: 700px) {
+    .sub-title {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
     }
-    20% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+    .user {
+        width: 60%;
     }
-    40% {
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
+    .skills {
+        padding: 1rem;
     }
-    50% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    60% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-    80% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+    .skills i {
+        margin: 1.5rem;
     }
 }
