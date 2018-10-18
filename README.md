@@ -1,2 +1,1 @@
-# estephanyc.github.io
-Portafolio de proyectos 
+# Portafolio de proyectos 
